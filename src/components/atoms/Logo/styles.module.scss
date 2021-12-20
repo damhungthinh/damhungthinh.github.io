@@ -1,11 +1,20 @@
 .root {
-  font-family: 'Wanderlust';
-  font-size: 130px;
-  line-height: 130px;
-  letter-spacing: 1px;
-  text-align: center;
-}
-@font-face {
-  font-family: 'Wanderlust';
-  src: url('./fonts/Wanderlust.ttf') format('truetype');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .logo {
+    font-size: 130px;
+    line-height: 100px;
+    letter-spacing: 1px;
+    font-family: 'Wanderlust';
+
+    text-align: center;
+  }
+  .slogan {
+    font-family: 'Cunia';
+    font-size: 18px;
+    color: gray;
+  }
 }

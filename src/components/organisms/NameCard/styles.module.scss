@@ -1,0 +1,33 @@
+.root {
+  border-radius: 10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  [class*='ant-row'] {
+    width: 100%;
+  }
+  .cover {
+    height: 85vh;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    .greeting {
+      font-family: 'Cunia';
+      color: var(--gray);
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .fullname {
+      font-family: 'Wanderlust';
+      color: var(--blue);
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 60px;
+    }
+  }
+}

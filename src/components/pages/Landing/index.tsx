@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Layout, Menu } from 'antd'
-import { ProfileOutlined } from '@ant-design/icons'
+import { Layout } from 'antd'
 import { Copyright } from '@components/atoms/Copyright'
 import { Logo } from '@components/atoms/Logo'
+import { Menu } from '@components/molecules/Menu'
+import { NameCard } from '@components/organisms/NameCard'
+
 import { toStyledModuleNames } from '@utils/styledModuleName'
 import style from './styles.module.scss'
 
@@ -17,14 +19,14 @@ export const Landing = () => {
           <Logo />
         </Link>
 
-        <Menu>
-          <Menu.Item icon={<ProfileOutlined />}>
-            <Link to='#whoami'>Who am I</Link>
-          </Menu.Item>
-        </Menu>
+        <div className={styledModule`menu-wrapper`}>
+          <Menu />
+        </div>
       </Layout.Sider>
       <Layout className={styledModule`site-layout`}>
-        <Layout.Content></Layout.Content>
+        <Layout.Content className={styledModule`container`}>
+          <NameCard />
+        </Layout.Content>
         <Layout.Footer className={styledModule`footer`}>
           <Copyright />
         </Layout.Footer>

@@ -40,6 +40,7 @@ export = {
             '@hook/*': './src/hooks/*',
             '@entity/*': './src/entities/*',
             '@utils/*': './src/utils/*',
+            '@assets/*': './src/assets/*',
             '@components/*': './src/components/*',
             '@reducers/*': './src/store/reducers/*',
             '@middlewares/*': './src/store/middlewares/*',

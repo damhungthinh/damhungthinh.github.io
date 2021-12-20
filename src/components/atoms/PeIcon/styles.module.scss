@@ -1,0 +1,28 @@
+.root {
+  font-family: 'Pixeden7';
+  &.md {
+    font-size: 32px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.user::after {
+    content: '\e605';
+  }
+
+  &.rocket::after {
+    content: '\e6c3';
+  }
+
+  &.science:before {
+    content: '\e619';
+  }
+
+  &.way:before {
+    content: '\e68e';
+  }
+}
