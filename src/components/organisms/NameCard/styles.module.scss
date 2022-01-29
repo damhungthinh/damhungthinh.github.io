@@ -1,33 +1,57 @@
 .root {
-  border-radius: 10px;
-  height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  [class*='ant-row'] {
-    width: 100%;
-  }
-  .cover {
-    height: 85vh;
+  height: 600px;
+  padding: 0px 20px;
+  .greeting {
+    font-family: 'Cunia';
+    color: var(--gray);
+    font-size: 32px;
+    line-height: 32px;
   }
 
-  .information {
-    display: flex;
-    flex-direction: column;
-    padding-left: 40px;
+  .fullname {
+    font-family: 'Wanderlust';
+    color: var(--primary);
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+  }
+
+  .description {
+    color: var(--gray-dark);
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'eurostile', sans-serif;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .description {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .description {
+      padding-top: 10px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 575px) {
     .greeting {
-      font-family: 'Cunia';
-      color: var(--gray);
       font-size: 20px;
       line-height: 20px;
     }
-
     .fullname {
-      font-family: 'Wanderlust';
-      color: var(--blue);
-      font-size: 60px;
-      font-weight: 900;
-      line-height: 60px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .description {
+      font-size: 14px;
     }
   }
 }

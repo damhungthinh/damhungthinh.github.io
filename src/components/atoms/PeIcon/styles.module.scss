@@ -10,6 +10,15 @@
     justify-content: center;
   }
 
+  &.lg {
+    font-size: 64px;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
   &.user::after {
     content: '\e605';
   }
@@ -24,5 +33,12 @@
 
   &.way:before {
     content: '\e68e';
+  }
+  &.browser::before {
+    content: '\e672';
+  }
+
+  &.server::before {
+    content: '\e617';
   }
 }

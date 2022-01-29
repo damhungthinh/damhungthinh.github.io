@@ -4,6 +4,18 @@
   justify-content: center;
   flex-direction: column;
 
+  &.small {
+    .logo {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    .slogan {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+
   .logo {
     font-size: 130px;
     line-height: 100px;

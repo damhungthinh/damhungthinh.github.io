@@ -1,3 +1,5 @@
+import { UnDefinedObject } from 'src/entites/Base'
+
 type Stylesheets = {
   readonly [selector: string]: string
 }
@@ -83,7 +85,7 @@ const toKebabCase = (value: string) => {
  * @returns a single string of css class name from styled object
  */
 export const toStylingName = (
-  style: Stylesheets,
+  style: Stylesheets | UnDefinedObject,
   usePropName: boolean = false
 ) => {
   const styling = usePropName
